@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>welcome to function based view</h1>
+    
+  <!--  <form method="POST">
+        {% csrf_token %}
+    <tr><th><label for="id_name">Name:</label></th><td><input type="text" name="name" value={{res.name}} required id="id_name"></td></tr>
+<tr><th><label for="id_email">Email:</label></th><td><input type="text" name="email" value={{res.email}} required id="id_email"></td></tr>
+<tr><th><label for="id_sal">Sal:</label></th><td><input type="number" name="sal" value={{res.sal}} required id="id_sal"></td></tr>
+    <input type="submit">
+    </form>
+    <form method="POST">
+        {% csrf_token %}
+            {{res.as_p}}
+            <input type="submit">
+        </form>-->
+    
+   {% for i in res %}
+    <h1>{{i.id}}</h1><h1>{{i.name}}</h1><h1>{{i.email}}</h1><h1>{{i.sal}}</h1>
+    {% endfor %}
+    
+</body>
+</html>
